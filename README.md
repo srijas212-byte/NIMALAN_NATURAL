@@ -121,7 +121,17 @@
       <p class="price">₹95</p>
       <a class="btn" href="https://wa.me/917200853885">Order on WhatsApp</a>
     </div>
-
+<!-- Beetroot Malt -->
+<div class="card">
+  <img src="beetroot-malt.jpg" alt="Beetroot Malt">
+  <h3>Beetroot Malt</h3>
+  <p>Instant Milk Mix</p>
+  <p>Weight: 250 Gram</p>
+  <p class="price">₹280</p>
+  <a class="btn" href="https://wa.me/917200853885" target="_blank">
+    Order on WhatsApp
+  </a>
+</div>
   </div>
 </section>
 
