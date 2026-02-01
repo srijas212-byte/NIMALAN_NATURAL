@@ -1,4 +1,4 @@
-!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -8,13 +8,13 @@
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background: #f6f6f6;
+      background: #f4f6f5;
       color: #333;
     }
     header {
       background: #1f5f3b;
       color: white;
-      padding: 20px;
+      padding: 25px 15px;
       text-align: center;
     }
     nav a {
@@ -24,38 +24,65 @@
       font-weight: bold;
     }
     section {
-      padding: 40px 20px;
-      max-width: 1100px;
+      padding: 45px 20px;
+      max-width: 1200px;
       margin: auto;
     }
     h2 {
       color: #1f5f3b;
+      text-align: center;
+      margin-bottom: 30px;
     }
+
+    /* PRODUCT GRID */
     .products {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
     }
     .card {
       background: white;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    .card img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+    }
+    .card h3 {
+      margin: 15px 0 5px;
+      color: #1f5f3b;
+    }
+    .card p {
+      margin: 4px 0;
+      font-size: 15px;
+    }
+    .price {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 8px 0;
     }
     .btn {
       display: inline-block;
-      margin-top: 15px;
-      padding: 10px 20px;
+      margin-top: 12px;
+      padding: 10px 22px;
       background: #1f5f3b;
       color: white;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 25px;
+      font-size: 14px;
     }
+
     footer {
       background: #1f5f3b;
       color: white;
       text-align: center;
-      padding: 20px;
+      padding: 25px;
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -68,52 +95,43 @@
   <nav>
     <a href="#about">About</a>
     <a href="#products">Products</a>
-    <a href="#order">Order</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
 
 <section id="about">
   <h2>About Us</h2>
-  <p>
-    Nimalan Natural brings traditional health mixes and natural wellness products,
-    prepared after thorough research and personal use. Our focus is on clean
-    ingredients, honest quality, neat presentation, and affordable pricing.
+  <p style="text-align:center; max-width:800px; margin:auto;">
+    Nimalan Natural offers traditional health mixes and natural wellness products,
+    prepared after careful research and personal use. Our products are made with
+    quality ingredients, neat preparation, and offered at affordable prices.
   </p>
 </section>
 
 <section id="products">
   <h2>Our Products</h2>
-  <div class="products">
-    <div class="card">Health Mix<br>250g – ₹260</div>
-    <div class="card">Thinai Pongal Mix<br>500g – ₹290</div>
-    <div class="card">Millet Dosa Mix<br>500g – ₹210</div>
-    <div class="card">Urad Dal Kanji Mix<br>250g – ₹260</div>
-    <div class="card">Kollu Kanji Mix<br>250g – ₹290</div>
-    <div class="card">Karuppu Kavuni Kanji Mix<br>250g – ₹290</div>
-    <div class="card">ABC Malt<br>250g – ₹290</div>
-    <div class="card">Ragi Choco Mix<br>250g – ₹300</div>
-    <div class="card">Golden Milk Mix<br>250g – ₹300</div>
-    <div class="card">Moringa Idli Podi<br>100g – ₹95</div>
-    <div class="card">Pirandai Sadha Podi<br>100g – ₹95</div>
-    <div class="card">Paruppu Sadha Podi<br>100g – ₹95</div>
-    <div class="card">Moringa Rice Powder<br>100g – ₹95</div>
-    <div class="card">Brightening Face Pack<br>250g – ₹290</div>
-    <div class="card">Honey Amla<br>250g – ₹250</div>
-  </div>
-</section>
 
-<section id="order">
-  <h2>How to Order</h2>
-  <p>Order easily via WhatsApp or Instagram.</p>
-  <a class="btn" href="https://wa.me/917200853885">Order on WhatsApp</a>
+  <div class="products">
+
+    <!-- Pirandai Sadha Podi -->
+    <div class="card">
+      <img src="pirandai-sadha-podi.jpg" alt="Pirandai Sadha Podi">
+      <h3>Pirandai Sadha Podi</h3>
+      <p>Weight: 100 Gram</p>
+      <p class="price">₹95</p>
+      <a class="btn" href="https://wa.me/917200853885">Order on WhatsApp</a>
+    </div>
+
+  </div>
 </section>
 
 <section id="contact">
   <h2>Contact Us</h2>
-  <p><strong>Phone:</strong> 7200853885</p>
-  <p><strong>Instagram:</strong> @nimalan_natural</p>
-  <p><strong>YouTube:</strong> Nimalan_natural</p>
+  <p style="text-align:center;">
+    📞 <strong>7200853885</strong><br><br>
+    📸 Instagram: <strong>@nimalan_natural</strong><br>
+    ▶️ YouTube: <strong>Nimalan_natural</strong>
+  </p>
 </section>
 
 <footer>
